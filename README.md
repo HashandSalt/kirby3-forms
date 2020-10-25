@@ -103,8 +103,10 @@ Accepts type, name, css ID, css Class, text string, and an array of HTML attribu
 
 Working Example:
 
-<?= button('button', 'send', 'sendMsg', 'btn', 'Disabled', ['value' => "Don't Click Me!", 'disabled' => true]) ?>
 
+```
+<?= button('button', 'send', 'sendMsg', 'btn', 'Disabled', ['value' => "Don't Click Me!", 'disabled' => true]) ?>
+```
 
 ### Radios & Checkboxes
 
@@ -169,5 +171,4 @@ The plugin contains a few snippets to match the functions above, so you can use 
 <?= snippet('forms/textarea', ['wrapclass' => 'form-input', 'label' => 'Feedback', 'name' => 'feedback', 'id' => 'feedback', 'labelclass' => 'label-class', 'inputclass' => 'input-text', 'attr' => ['placeholder' => 'Enter your name']]) ?>
 
 <?= snippet('forms/formMsg', ['wrapclass' => 'error-box', 'tag' => 'p', 'msg' => 'Please fill out the field.', 'class' => 'error-txt']); ?>
-
 ```
