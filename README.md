@@ -78,19 +78,19 @@ Accepts name, css ID, css Class, Html Attribute array, default selection (option
 Basic use:
 
 ```
-<?= select('colors', 'colorSelection', 'input-class', null, ['Red' => 'red', 'Green' => 'green', 'Blue' => 'blue']) ?>
+<?= select('colors', 'colorSelection', 'input-class', null, ['red' => 'Red', 'green' => 'Green', 'blue' => 'Blue']) ?>
 ```
 
 With an option pre-selected:
 
 ```
-<?= select('colors', 'colorSelection', 'input-class', null, ['Red' => 'red', 'Green' => 'green', 'Blue' => 'blue'], true, 'Blue') ?>
+<?= select('colors', 'colorSelection', 'input-class', null, ['red' => 'Red', 'green' => 'Green', 'blue' => 'Blue'], true, 'blue') ?>
 ```
 
 With an option pre-selected and additional HTML attributes:
 
 ```
-<?= select('colors', 'colorSelection', 'input-class', ['disabled' = true], ['Red' => 'red', 'Green' => 'green', 'Blue' => 'blue'], true, 'Blue') ?>
+<?= select('colors', 'colorSelection', 'input-class', ['disabled' = true], ['red' => 'Red', 'green' => 'Green', 'blue' => 'Blue'], true, 'blue') ?>
 ```
 
 ### Buttons
@@ -166,7 +166,7 @@ The plugin contains a few snippets to match the functions above, so you can use 
 ```
 <?= snippet('forms/input', ['type' => 'range', 'wrapclass' => 'form-input', 'label' => 'How many?', 'name' => 'many', 'id' => 'many', 'labelclass' => 'label-class', 'inputclass' => 'input-range', 'attr' => ['min' => '1', 'max' => '20']]) ?>
 
-<?= snippet('forms/select', ['wrapclass' => 'form-input', 'label' => 'Colors', 'name' => 'colors', 'id' => 'colors', 'labelclass' => 'label-class', 'inputclass' => 'input-text', 'attr' => [], 'list' => ['Red' => 'red', 'Green' => 'green', 'Blue' => 'blue']]) ?>
+<?= snippet('forms/select', ['wrapclass' => 'form-input', 'label' => 'Colors', 'name' => 'colors', 'id' => 'colors', 'labelclass' => 'label-class', 'inputclass' => 'input-text', 'attr' => [], 'list' => ['red' => 'Red', 'green' => 'Green', 'blue' => 'Blue']]) ?>
 
 <?= snippet('forms/textarea', ['wrapclass' => 'form-input', 'label' => 'Feedback', 'name' => 'feedback', 'id' => 'feedback', 'labelclass' => 'label-class', 'inputclass' => 'input-text', 'attr' => ['placeholder' => 'Enter your name']]) ?>
 

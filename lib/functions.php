@@ -59,12 +59,12 @@ function select($name, $id, $class, $opt = null, $list = null, $selected = true,
   foreach ($list as $key => $value) {
     if ($key === $idx) {
       if ($selected == true) {
-        $l[$idx] = Html::tag('option', $key, ["value" => $value, "selected" => true]);
+        $l[$idx] = Html::tag('option', $value, ["value" => $key, "selected" => true]);
       } else {
-        $l[] = Html::tag('option', $key, ["value" => $value]);
+        $l[] = Html::tag('option', $value, ["value" => $key]);
       }
     } else {
-      $l[] = Html::tag('option', $key, ["value" => $value]);
+      $l[] = Html::tag('option', $value, ["value" => $key]);
     }
   }
 
